@@ -207,7 +207,14 @@ font-size: 50px;
 text-align: center;
 max-width: 100%;
 width: 320px;
+transition: transform 150ms;
 }
+.landing .intro-text h1:hover{
+
+transform: translatey(-20px);
+
+}
+
 
 .landing .intro-text p {
 font-size: 19px;
@@ -223,7 +230,6 @@ line-height: 1.6;
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #f6f6f6;
-
 
 }
 
@@ -244,6 +250,13 @@ text-align: center;
 .features .feat i{
 color: var(--main-color);
 font-size: 45px;
+transition: transform 250ms;
+}
+
+.features .feat i:hover{
+
+  transform: translateY(-10px);
+
 }
 .features .feat h3{
 font-weight: 800;
@@ -287,7 +300,13 @@ text-align: center;
 .services .service-contant .sev i{
   color: var(--main-color);
 font-size: 25px;
+transition: transform 150ms;
   }
+  .services .service-contant .sev i:hover{
+
+    transform: translateY(-10px);
+  }
+
 /* .services .service-contant .sev .text {
 flex: 1;
   } */
@@ -351,8 +370,23 @@ margin-left: 20px;
 margin-right: 20px;
 }
 
+.portfolio .portfolio-contant .card:hover
+{
+border: 3px solid var(--sec-color);
+
+}
+
 .portfolio .portfolio-contant .card img {
 width: 100%;
+}
+
+.portfolio .portfolio-contant .card img{
+opacity: 0.5;
+
+}
+
+.portfolio .portfolio-contant .card img:hover{
+opacity: 1.0;
 
 }
 
@@ -535,8 +569,16 @@ font-size: 15px;
 .contact .info .social i{
 margin-left: 20px;
 color: var(--sec-color);
+transition: transform 150ms;
 
 }
+.contact .info .social i:hover
+{
+color: var(--main-color);
+transform: translateY(-5px);
+
+}
+
 
 @media(max-width:767px){
   .contact .info .lable,
